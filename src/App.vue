@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <router-link :to="{path:'/userlist'}">userlist</router-link>|
+    <router-link :to="{name:'userinfo'}">userinfo</router-link>|
+    <router-link to="/nownews">nownews</router-link>|
+    <router-link to="/hisnews">hisnews</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
